@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #282828;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    
+}
+
+li {
+    cursor: pointer;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.icon {
+    height: 35px;
+}
+
+.profile-card {
+    object-fit: cover;
+    width: 94vw;
+    height: 100vh;
+    max-width: 100vw;
+    margin-top: 1.5rem;
+    margin: 5px;
+    padding: 0;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    background: white;
+    
+}
+
+.profile-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
+}
+
+.profile-info { 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: whitesmoke;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    border-radius: 0 0 0 10px;
+}
+
+.name-age {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.bio {
+    font-size: 1rem;
+}
+
+footer {
+    height: 10vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+}
+
+.actions {
+    position: absolute;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 45%;
+    gap: 40px;
+    
+}
+
+.btn {
+    
+    padding: 25px;
+    border-radius: 50%;
+    box-shadow: 4px 10px 14px -4px rgba(0,0,0,0.4);
+}
+
+#heart:hover {
+    background-color: #DBFFF4;
+}
+
+#cross:hover {
+    background-color: #FFE7EF;
+}
