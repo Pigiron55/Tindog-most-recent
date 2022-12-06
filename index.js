@@ -1,7 +1,22 @@
 import dogs from './data.js'
 import Dog from './Dog.js'
 
-let dogsArray = ["Rex", "Bella", "Teddy"]
+let dcurrentDogIndex = 0
+let currentDog = new Dog(dogs[currentDogIndex])
+
+const liked = () => {
+    currentDog.setMatchStatus(true)
+    document.getElementById('badge').innerHtml = 
+    `<img src="images/badge-like.png">`
+    setTimeout(getNextDog, 1000)
+}
+
+const disLiked = () => {
+    currentDog.setMatchStatus(false)
+    document.getElementById('badge').innerHtml = 
+    `<img src="images/badge-nope.png">`
+    setTimeout(getNextDog, 1000)
+}
 
 function getNewProfile() {
     const nextProfileData = dogs[dogsArray.shift()]
@@ -11,10 +26,8 @@ function getNewProfile() {
 
 function disliked(){
     document.body.innerHTML = `
-                <div class="end-game">
-                    <h2>Game Over</h2> 
-                    <h3>${endMessage}</h3>
-                    <p class="end-emoji">${endEmoji}</p>
+                <div class="disliked">
+                    <img class="disliked"></img>
                 </div>
                 `
 }
